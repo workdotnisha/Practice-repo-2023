@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">My Files</a></li>
+      <li><a href="#">Account</a></li>
+    </ul>
+  </nav>
+
+  <!-- File Manager Container -->
+  <div class="file-manager">
+
+    <!-- Drag and Drop Area -->
+    <div class="upload-area" id="upload-area">
+      <p>Drag and Drop files here or <button id="file-select-btn">Select Files</button></p>
+      <input type="file" id="file-input" hidden multiple>
+    </div>
+
+    <!-- File Preview Panel -->
+    <div class="preview-panel" id="preview-panel">
+      <h2>Preview</h2>
+      <img id="file-thumbnail" src="" alt="File Preview" hidden>
+      <p id="file-name"></p>
+      <p id="file-size"></p>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button id="edit-btn">Edit</button>
+        <button id="preview-btn">Preview</button>
+        <button id="delete-btn">Delete</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
